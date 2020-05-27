@@ -48,9 +48,49 @@
   <div class="form-group row">
     <label for="inputPassword3" class="col-sm-2 col-form-label">Stockage</label>
     <div class="col-sm-10">
-      <input class="form-control" id="inputPassword3">
+      <input class="form-control" id="inputPassword4">
     </div>
   </div>
+  <hr>
+  <h3>PC 2</h3>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Boitier</label>
+    <div class="col-sm-10">
+      <input  class="form-control" id="inputPassword5">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Procceseur</label>
+    <div class="col-sm-10">
+      <input  class="form-control" id="inputPassword6">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Carte Graphique</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="inputPassword7">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Ram</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="inputPassword8">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Stockage</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="inputPassword9">
+    </div>
+  </div>
+
+
+
+
+
+
+
+
 <div>
       <button onclick="myFunction()" class="btn btn-primary">Générer</button>
     </div>
@@ -65,11 +105,20 @@ function myFunction() {
   var inputVal = document.getElementById("inputEmail4").value;
             
             // Displaying the value
-            document.getElementById("demo").innerHTML += "PC Fixe :";
-            document.getElementById("demo").innerHTML += "<br>";
-            document.getElementById("demo").innerHTML += "Boitier :"+document.getElementById("inputEmail4").value;
-            document.getElementById("demo").innerHTML += "<br>";
-            document.getElementById("demo").innerHTML += "Processeur :"+document.getElementById("inputPassword1").value;
+            document.getElementById("innerTextOutput").value = "";
+            document.getElementById("innerTextOutput").value =("PC Fixe :\nBoitier : "+document.getElementById("inputEmail4").value+
+            "\nProcesseur : "+document.getElementById("inputPassword1").value+
+            "\nCarte Graphique : "+document.getElementById("inputPassword2").value+
+            "\nRAM  : "+document.getElementById("inputPassword3").value+
+            "\nStockage  : "+document.getElementById("inputPassword4").value+
+            "\n\nPC 2\nBoitier :"+document.getElementById("inputPassword5").value+
+            "\nProcesseur : "+document.getElementById("inputPassword6").value+
+            "\nCarte Graphique : "+document.getElementById("inputPassword7").value+
+            "\nRAM  : "+document.getElementById("inputPassword8").value+
+            "\nStockage  : "+document.getElementById("inputPassword9").value);
+
+
+            document.getElementById("demo").innerHTML += "Processeur :"
             document.getElementById("demo").innerHTML += "<br>";
             document.getElementById("demo").innerHTML += "Carte Graphique :"+document.getElementById("inputPassword2").value;
             document.getElementById("demo").innerHTML += "<br>";
@@ -82,19 +131,8 @@ function myFunction() {
 
 
 <div class="jumbotron">
-  <table class="table">
-    <thead>
-      <tr>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><p id="demo"></p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <textarea id="innerTextOutput" rows="30" cols="50" readonly>zaearzer zer erzerezrzerezrzerezrzrezrze</textarea>
+
 </div>
 
 
