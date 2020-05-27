@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+<div class='jumbotron'>
+  <h3>PC Fixe</h3>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Boitier</label>
+    <div class="col-sm-10">
+      <input  class="form-control" id="inputEmail4">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Procceseur</label>
+    <div class="col-sm-10">
+      <input  class="form-control" id="inputPassword1">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Carte Graphique</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="inputPassword2">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Ram</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="inputPassword3">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Stockage</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="inputPassword3">
+    </div>
+  </div>
+  <hr>
+  <h3>PC Fixe</h3>
+<div>
+      <button onclick="myFunction()" class="btn btn-primary">Générer</button>
+    </div>
+  </div>
+
+
+</div>
+
+
+<script>
+function myFunction() {
+  var inputVal = document.getElementById("inputEmail4").value;
+            
+            // Displaying the value
+            document.getElementById("demo").innerHTML += "PC Fixe :";
+            document.getElementById("demo").innerHTML += "<br>";
+            document.getElementById("demo").innerHTML += "Boitier :"+document.getElementById("inputEmail4").value;
+            document.getElementById("demo").innerHTML += "<br>";
+            document.getElementById("demo").innerHTML += "Processeur :"+document.getElementById("inputPassword1").value;
+            document.getElementById("demo").innerHTML += "<br>";
+            document.getElementById("demo").innerHTML += "Carte Graphique :"+document.getElementById("inputPassword2").value;
+            document.getElementById("demo").innerHTML += "<br>";
+            document.getElementById("demo").innerHTML += "RAM  :"+document.getElementById("inputPassword3").value;
+            document.getElementById("demo").innerHTML += "<br>";
+            document.getElementById("demo").innerHTML += "Stockage :"+document.getElementById("inputPassword4").value;
+            //alert(inputVal);
+}
+</script>
+
+
+<div class="jumbotron">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p id="demo"></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+</div>
