@@ -1,413 +1,211 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<style>
-body {
-  background: url('https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
+<head>
+  <title>Anglais CO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+      .home {
+  background: url('https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
-.textinput {
-            float: left;
-            width: 100%;
-            min-height: 1100px;
-            outline: none;
-            resize: none;
-            border: 1px solid grey;
-        }
-</style>
-
-
-
-  </head>
-  <body>
-      <!-- Navigation -->
-      <div class="container">    
-<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow fixed-top">
+video {
+    width: 100%;
+    height: auto;
+  }
+  </style>
+</head>
+<!-- Navigation -->
+<div id="home" class="home">
+<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
     <div class="container">
-      <a class="navbar-brand" href="#">Mon Setup</a>
+      <a class="navbar-brand" href="#">Anglais CO</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#desc1" onclick="myFunction()">Générer</a>
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-</div>
-  
+
   <!-- Page Content -->
-  <div style="height: 30px"></div>
-  <div id="page1" class="container">
+  <div class="container">
     <div class="card border-0 shadow my-5">
       <div class="card-body p-5">
-        <h1 class="font-weight-light">Générateur de description</h1>
-        <p class="lead">Remplissez tout les composants puis appuyez sur générer pour créer la description</p>
-        <hr>
-        <div style="height: 10px"></div>
-  <div id="accordion">
+        
+        <h1 class="font-weight-light">Compréhension Orale</h1>
+        <br>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Paramètre vidéo</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fichier : </td>
+                <td><input type="file"  id="myFile"><br></td>
+              </tr>
+              <tr>
+                <td>Commencer la lecture à : (secondes)</td>
+                <td><input class="form-control" id="input1"></td>
+              </tr>
+              <tr>
+                <td>Terminer la lecture à :</td>
+                <td><input class="form-control" id="input2" disabled></td>
+              </tr>
+            </tbody>
+          </table>
+        <br>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Paramètre temps</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nombre d'écoutes :</td>
+                    <td><input class="form-control" id="input2"value="3" disabled></td>
+                  </tr>
+              <tr>
+                <td>Temps de pause entre chaque lectures : </td>
+                <td><input class="form-control" id="input3" value="10" disabled></td>
+              </tr>
+              <tr>
+                <td>Temps de rédaction après les écoutes :</td>
+                <td><input class="form-control" id="input4" value="10" disabled></td>
+              </tr>
 
-    <div class="card">
-      <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#collapseOne">PC 1</a>
-      </div>
-      <div id="collapseOne" class="collapse show" data-parent="#accordion">
-        <div class="card-body">
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Marque</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input1">
-                </div>
-              </div>
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Boitier</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input2">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Carte mère</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input3">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Procceseur</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input4">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Carte Graphique</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input5">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Ram</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input6">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Stockage</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input7">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Ecran 1</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input8">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Ecran 2</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input9">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Ecran 3</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input10">
-                </div>
-              </div>
-            
+            </tbody>
+          </table>
 
+        <button type="button" onclick="lancer()" class="btn btn-primary btn-block">Lancer</button>
 
-
-
-        </div>
       </div>
     </div>
-  
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">PC 2</a>
-      </div>
-      <div id="collapseTwo" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Marque</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input11">
-                </div>
-              </div>
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Boitier</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input12">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Carte mère</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input13">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Procceseur</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input14">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Carte Graphique</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input15">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Ram</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input16">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Stockage</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input17">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Ecran 1</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input18">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Ecran 2</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input19">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Ecran 3</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input20">
-                </div>
-              </div>
+  </div>
+</div> 
 
-        </div>
-      </div>
-    </div>
-  
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">Son & Vidéo</a>
-      </div>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-            <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Camera 1</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="input21">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Camera 2</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="input22">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Casque</label>
-    <div class="col-sm-10">
-      <input  class="form-control" id="input23">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Micro</label>
-    <div class="col-sm-10">
-      <input  class="form-control" id="input24">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Haut-parleurs</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="input25">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Table de mixage</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="input26">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Carte d'aquisition</label>
-    <div class="col-sm-10">
-      <input class="form-control" id="input27">
-    </div>
-  </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="card">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-            Autres
-          </a>
-        </div>
-        <div id="collapseFour" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Fond vert</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input28">
-                </div>
+
+<div class="container-fluid" id="waiting">
+  <div class="row">
+      <div class="col-12 p-0">
+          <div class="jumbotron min-vh-100 text-center m-0 bg-info d-flex flex-column justify-content-center">
+            <div class="card">
+              <div class="card-body">
+              <h1 class="display-4">Quelques règles avant de commencer</h1>
+              </p>
+              <div class="text-center">
+                <p class="lead">Le document sera diffusé 3 fois</p>
+                <p class="lead">Entre chaque écoute, une pause de x sera faite</p>
+                <p class="lead">A la fin des trois écoutes, vous devez redigez un compte-rendu en français</p>
+                <button type="button" onclick="lancer2();" class="btn btn-info">Lancer</button>
               </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Stream Deck</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input29">
+            </div>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Table</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input30">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Tapis de souris</label>
-                <div class="col-sm-10">
-                  <input  class="form-control" id="input31">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Lumières</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input32">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Siège</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input33">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">LED</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input34">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Trépied</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input35">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Clavier</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input36">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Souris</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input37">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Manette</label>
-                <div class="col-sm-10">
-                  <input class="form-control" id="input38">
-                </div>
-              </div>
+              <p class="lead">
+              </p>
           </div>
-        </div>
       </div>
-  </div>
-  <hr>
-  <div id="accordion">
-
-    <div class="card">
-      <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#a1">Description 1</a>
-      </div>
-      <div id="a1" class="collapse show" data-parent="#accordion">
-        <div class="card-body">
-            <textarea id="desc1" class="textinput" readonly ></textarea>
-
-        </div>
-      </div>
-    </div>
-  
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-          Description 2
-        </a>
-      </div>
-      <div id="collapseTwo" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-            <textarea id="desc2" class="textinput" readonly ></textarea>
-        </div>
-      </div>
-    </div>
-  
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </div>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-          Lorem ipsum..
-        </div>
-      </div>
-    </div>
-  
   </div>
 </div>
 
 
+<div class="container-fluid" id="waiting1">
+  <div class="row">
+      <div class="col-12 p-0">
+          <div class="jumbotron min-vh-100 text-center m-0 bg-info d-flex flex-column justify-content-center">
+            <div class="card">
+              <div class="card-body">
+              <h1 class="display-4" id="bipa"></h1>
 
+            </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </div>
 
+  <div class="container-fluid" id="waiting2">
+    <div class="row">
+        <div class="col-12 p-0">
+            <div class="jumbotron min-vh-100 text-center m-0 bg-info d-flex flex-column justify-content-center">
+              <div class="card">
+                <div class="card-body">
+                <h1 class="display-4" id="bipb"></h1>
+  
+              </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid" id="waiting3">
+      <div class="row">
+          <div class="col-12 p-0">
+              <div class="jumbotron min-vh-100 text-center m-0 bg-info d-flex flex-column justify-content-center">
+                <div class="card">
+                  <div class="card-body">
+                  <h1 class="display-4" id="bipc"></h1>
+    
+                </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
 
+<div id=video1 >
+<video controls id="theVideo1" onended="pause1()">
+</div>
+<div id=video2 >
+<video controls id="theVideo2" onended="pause2()">
+</div>
+<div id=video3 >
+<video controls id="theVideo3" onended="pause3()">
+</div>
+<script>
+  document.getElementById("waiting2").style.display = "none";
+  document.getElementById("waiting3").style.display = "none";
+  document.getElementById("waiting1").style.display = "none";
+  document.getElementById("waiting").style.display = "none";
+  document.getElementById("video1").style.display = "none";
+  document.getElementById("video2").style.display = "none";
+  document.getElementById("video3").style.display = "none";
 
-
-
-
-
-
-
-
-
-
-
-
+function changeVideo() {
+  var chosenFile = document.getElementById("myFile").files[0];
+  document.getElementById("theVideo1").setAttribute("src", URL.createObjectURL(chosenFile));
+  document.getElementById("theVideo2").setAttribute("src", URL.createObjectURL(chosenFile));
+  document.getElementById("theVideo3").setAttribute("src", URL.createObjectURL(chosenFile));
 
 
 
@@ -416,122 +214,100 @@ body {
   
 
 
+timevideo()
+}
+function timevideo(){
+    document.getElementById("input2").value = document.getElementById("theVideo").duration;
+}
+
+document.getElementById("myFile").addEventListener("change", changeVideo);
+
+function lancer(){
+  document.getElementById("waiting").style.display = "block";
+  document.getElementById("home").style.display = "none";
+  document.getElementById("theVideo1").currentTime = document.getElementById("input1").value;
+}
+function lancer2(){
+  document.getElementById("waiting").style.display = "none";
+  document.getElementById("home").style.display = "none";
+  document.getElementById("theVideo1").currentTime = document.getElementById("input1").value;
+  document.getElementById("theVideo2").currentTime = document.getElementById("input1").value;
+  document.getElementById("theVideo3").currentTime = document.getElementById("input1").value;
+
+  document.getElementById("video1").style.display = "block";
+  document.getElementById("theVideo1").play();
+
+}
 
 
 
 
+function pause1(){
+  document.getElementById("waiting1").style.display = "block";
+  document.getElementById("video1").style.display = "none";
+  intervalIda = setInterval(bipa, 1000);
+}
 
+function pause2(){
+  document.getElementById("waiting2").style.display = "block";
+  document.getElementById("video2").style.display = "none";
+  intervalIdb = setInterval(bipb, 1000);
+}
 
+function pause3(){
+  document.getElementById("waiting3").style.display = "block";
+  document.getElementById("video3").style.display = "none";
+  intervalIdc = setInterval(bipc, 1000);
+}
+var countera = 10;
+var intervalIda = null;
+var counterb = 10;
+var intervalIda = null;
+var counterc = 10;
+var intervalIda = null;
+function bipa() {
+    countera--;
+    if(countera == 0) {
+      clearInterval(intervalIda);
+      document.getElementById("bipa").innerHTML = "TERMINE!";
+      document.getElementById("waiting1").style.display = "none";
+      document.getElementById("video2").style.display = "block";
+      document.getElementById("theVideo2").play();
 
-
-
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <script>
-    function myFunction() {
-                
-                // Displaying the value
-                document.getElementById("desc1").value = "";
-                document.getElementById("desc1").value =("PC Fixe \nMarque : "+document.getElementById("input1").value+
-                "\nBoitier : "+document.getElementById("input2").value+
-                "\nCarte mère : "+document.getElementById("input3").value+
-                "\nProcesseur  : "+document.getElementById("input4").value+
-                "\nCarte Graphique : "+document.getElementById("input5").value+
-                "\nRAM : "+document.getElementById("input6").value+
-                "\nStockage  : "+document.getElementById("input7").value+
-                "\nEcran 1 : "+document.getElementById("input8").value+
-                "\nEcran 2 : "+document.getElementById("input9").value+
-                "\nEcran 3 : "+document.getElementById("input10").value+
-                "\n\nPC 2 \nMarque : "+document.getElementById("input11").value+
-                "\nBoitier : "+document.getElementById("input12").value+
-                "\nCarte mère : "+document.getElementById("input13").value+
-                "\nProcesseur  : "+document.getElementById("input14").value+
-                "\nCarte Graphique : "+document.getElementById("input15").value+
-                "\nRAM : "+document.getElementById("input16").value+
-                "\nStockage  : "+document.getElementById("input17").value+
-                "\nEcran 1 : "+document.getElementById("input18").value+
-                "\nEcran 2 : "+document.getElementById("input19").value+
-                "\nEcran 3 : "+document.getElementById("input20").value+
-                "\n\nSon & Vidéo\nCamera 1 :"+document.getElementById("input21").value+
-                "\nCamera 2 : "+document.getElementById("input22").value+
-                "\nCasque : "+document.getElementById("input23").value+
-                "\nMicro : "+document.getElementById("input24").value+
-                "\nHaut-parleurs : "+document.getElementById("input25").value+
-                "\nTable de mixage : "+document.getElementById("input26").value+
-                "\nCarte d'aquisition : "+document.getElementById("input27").value+
-                "\n\nAutres \nFond vert : "+document.getElementById("input28").value+
-                "\nStream Deck : "+document.getElementById("input29").value+
-                "\nTable : "+document.getElementById("input30").value+
-                "\nTapis de souris  : "+document.getElementById("input31").value+
-                "\nLumières : "+document.getElementById("input32").value+
-                "\nSiège : "+document.getElementById("input33").value+
-                "\nLED  : "+document.getElementById("input34").value+
-                "\nTrépied : "+document.getElementById("input35").value+
-                "\nSouris : "+document.getElementById("input36").value+
-                "\nClavier : "+document.getElementById("input37").value+
-                "\nManette  : "+document.getElementById("input38").value);
-
-                document.getElementById("desc2").value = "";
-                document.getElementById("desc2").value =("PC Fixe \nMarque : "+document.getElementById("input1").value+
-                "\nBoitier : "+document.getElementById("input2").value+
-                "\nCarte mère : "+document.getElementById("input3").value+
-                "\nProcesseur  : "+document.getElementById("input4").value+
-                "\nCarte Graphique : "+document.getElementById("input5").value+
-                "\nRAM : "+document.getElementById("input6").value+
-                "\nStockage  : "+document.getElementById("input7").value+
-                "\n\nPC 2 \nMarque : "+document.getElementById("input11").value+
-                "\nBoitier : "+document.getElementById("input12").value+
-                "\nCarte mère : "+document.getElementById("input13").value+
-                "\nProcesseur  : "+document.getElementById("input14").value+
-                "\nCarte Graphique : "+document.getElementById("input15").value+
-                "\nRAM : "+document.getElementById("input16").value+
-                "\nStockage  : "+document.getElementById("input17").value+
-                "\n\nPÉRIPHÉRIQUES GAMING\nSouris : "+document.getElementById("input36").value+
-                "\nManette  : "+document.getElementById("input38").value+
-                "\nClavier : "+document.getElementById("input37").value+
-                "\nTapis de souris  : "+document.getElementById("input31").value+
-                "\nCasque : "+document.getElementById("input23").value+
-                "\nMicro : "+document.getElementById("input24").value+
-                "\nEcran 1 : "+document.getElementById("input8").value+
-                "\nEcran 2 : "+document.getElementById("input9").value+
-                "\nEcran 3 : "+document.getElementById("input10").value+
-                "\nEcran 1 : "+document.getElementById("input18").value+
-                "\nEcran 2 : "+document.getElementById("input19").value+
-                "\nEcran 3 : "+document.getElementById("input20").value+
-                "\n\nPÉRIPHÉRIQUES STREAMING\nLumières : "+document.getElementById("input32").value+
-                "\nCamera 1 :"+document.getElementById("input21").value+
-                "\nCamera 2 : "+document.getElementById("input22").value+
-                "\nCarte d'aquisition : "+document.getElementById("input27").value+
-                "\nFond vert : "+document.getElementById("input28").value+
-                "\nStream Deck : "+document.getElementById("input29").value+
-                "\nTable de mixage : "+document.getElementById("input26").value+
-                "\n\nAutres \nTable : "+document.getElementById("input30").value+
-                "\nSiège : "+document.getElementById("input33").value+
-                "\nLED  : "+document.getElementById("input34").value+
-                "\nTrépied : "+document.getElementById("input35").value+
-                "\nHaut-parleurs : "+document.getElementById("input25").value);
-
-
-
-
-
-    
-    
-                //alert(inputVal);
     }
-    </script>
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50" style="padding: 0px;" >
-      <div class="container text-center">
-        <small><strong>Made with ❤ by Ale-pe </strong>/  <i class="fa fa-github-square" style="font-size:24px;color:red"></i>
+    else {	
+        document.getElementById("bipa").innerHTML = "2ème écoute écoute dans " + countera + " secondes";
+    }	
+}
 
-        </a>
+function bipb() {
+    counterb--;
+    if(counterb == 0) {
+      clearInterval(intervalIdb);
+      document.getElementById("bipb").innerHTML = "TERMINE!";
+      document.getElementById("waiting2").style.display = "none";
+      document.getElementById("video3").style.display = "block";
+      document.getElementById("theVideo3").play();
+      
+    }
+    else {	
+        document.getElementById("bipb").innerHTML = "3ème écoute écoute dans " + counterb + " secondes";
+    }	
+}
 
-        </small>
-      </div>
-    </footer>
+function bipc() {
+    counterc--;
+    if(counterc == 0) {
+      clearInterval(intervalIdc);
+      document.getElementById("bipc").innerHTML = "TERMINE!";
+      
+    }
+    else {	
+        document.getElementById("bipc").innerHTML ="Il reste plus que"+ counterc + " secondes pour rediger";
+    }	
+}
+
+
+
+
+</script>
